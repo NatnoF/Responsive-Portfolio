@@ -3,8 +3,18 @@ body {
     line-height: 32px;
 }
 
+h1 {
+    color: rgb(65, 177, 158);
+    margin-bottom: 30px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.322);
+    padding-bottom: 30px;
+}
+
 #about-img {
     margin-right: 20px;
+    width: 100%;
+    height:auto;
+    max-width: 200px;
 }
 
 #aboutMe {
@@ -14,3 +24,33 @@ body {
     float: left;
 }
 
+@media screen and (max-width: 768px)
+{
+    #about-img {
+        width: 100%;
+        height:auto;
+        max-width: 300px;
+    }
+
+    .col-md-9 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+}
+
+@media screen and (max-width: 640px)
+{
+    #about-img {
+        width: 100%;
+        height:auto;
+        max-width: 550px;
+    }
+
+    .flex-column {
+        flex-direction: column!important
+    }
+    
+    .mr-sm-auto, .mx-sm-auto {
+        margin-right: 0px!important
+    }
+}
