@@ -1,0 +1,16 @@
+body {
+    background-image: url(../images/geometric-leaves.png);
+    line-height: 32px;
+}
+
+#about-img {
+    margin-right: 20px;
+}
+
+#aboutMe {
+    width:  100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    float: left;
+}
+
