@@ -3,12 +3,13 @@ body {
     font-size: 18px;
     line-height: 34px;
     color: #333;
+    height: 100%;
 }
 
 h1 {
     color: rgb(65, 177, 158);
     margin-bottom: 30px;
-    border-bottom: 2px solid rgba(128, 128, 128, 0.322);
+    border-bottom: 2px solid rgb(65, 177, 158);
     padding-bottom: 30px;
 }
 
@@ -25,6 +26,23 @@ footer {
     color: whitesmoke;
 }
 
+header {
+    width: 100%;
+    margin: 0 0 30px;
+    z-index: 99;
+    overflow: auto;
+    background: #fff;
+    border-bottom: 2px solid rgb(65, 177, 158);
+}
+
+h5 {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
 #about-img {
     margin-right: 20px;
     width: 100%;
@@ -32,13 +50,22 @@ footer {
     max-width: 200px;
 }
 
-#aboutMe {
+.container {
     width:100%;
     max-width: 960px;
     margin: 0 auto;
     clear: both;
 }
 
+.d-flex {
+    display: none;
+    display: none;
+}
+
+.navbar {
+    padding: 20px 0px 0px 0px!important;
+    padding-top:
+}
 @media screen and (max-width: 768px)
 {
     #about-img {
@@ -52,7 +79,7 @@ footer {
         flex: 0 0 100%;
     }
 
-    #aboutMe {
+    .container {
         width:100%;
         max-width: 650px;
         margin: 0 auto;
@@ -81,7 +108,11 @@ footer {
         margin-right: 0px!important
     }
 
-    #aboutMe {
+    .d-flex {
+        display: -ms-flexbox!important;
+        display: flex!important;
+    }
+    .container {
         width:100%;
         max-width: 590px;
         margin: 0 auto;
