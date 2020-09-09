@@ -75,6 +75,14 @@ nav {
     margin-bottom: 0px!important;
 }
 
+@media screen and (max-width: 896px)
+{
+    .project 
+    {
+        width: 45%!important;
+    }
+}
+
 @media screen and (max-width: 768px)
 {
     #about-img {
@@ -94,6 +102,7 @@ nav {
         margin: 0 auto;
         clear: both;
     }
+
 }
 
 @media screen and (max-width: 640px)
@@ -140,6 +149,16 @@ nav {
         margin-left: 0;
         margin-right: 0;
     }
+
+    #portFooter {
+        bottom: -1700px!important;
+    }
+
+    .project 
+    {
+        width: 100%!important;
+        max-width: 100%!important;
+    }
 }
 
 /* Contact Form Section */
@@ -175,4 +194,41 @@ input[type=submit] {
     cursor: pointer;
     background: rgb(77, 214, 191);
     color: #fff;
+}
+
+/* Portfolio Section */
+.project {
+    width: 274px;
+    overflow: auto;
+    position: relative;
+    float: left;
+    margin: 20px 0 25px;
+}
+
+.project:nth-child(even){ 
+    margin-right: 40px;
+}
+
+.project img {
+    width: 100%;
+    border: 0 none;
+    opacity: .8;
+}
+
+.project h3 { 
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    padding: 15px;
+    line-height: 30px;
+    border-bottom: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 300;
+    background: rgb(77, 214, 191);
+    color: #fff;
+}
+
+#portFooter {
+    bottom: -230px;
 }
