@@ -16,7 +16,6 @@ h1 {
 footer {
     position: absolute;
     bottom: 0;
-    left: 0;
     width: 100%;
     font-size: 12px;
     text-align: center;
@@ -107,10 +106,6 @@ nav {
 
 @media screen and (max-width: 640px)
 {
-
-    footer {
-        bottom: -250px;
-    }
     
     #about-img {
         width: 100%;
@@ -148,10 +143,6 @@ nav {
         margin-bottom: 10px!important;
         margin-left: 0;
         margin-right: 0;
-    }
-
-    #portFooter {
-        bottom: -1700px!important;
     }
 
     .project 
@@ -229,6 +220,18 @@ input[type=submit] {
     color: #fff;
 }
 
-#portFooter {
-    bottom: -230px;
+#connect
+{
+    font-size: 24px;
+}
+
+.pageContainer
+{
+    position: relative;
+    min-height: 100vh;
+}
+
+#aboutMe
+{
+    padding-bottom: 200px;
 }
